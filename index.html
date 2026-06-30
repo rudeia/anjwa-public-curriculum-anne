@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기하 공동교육과정 운영 계획 인포그래픽</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f8fafc;
+        }
+        /* Custom Scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c7d2fe; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #818cf8; 
+        }
+        
+        /* Fade-in Animation for Tabs */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased p-4 md:p-8 max-w-6xl mx-auto">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-br from-indigo-700 to-blue-600 text-white p-6 md:p-10 rounded-3xl shadow-xl mb-10 relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mt-10 -mr-6 text-white opacity-10 pointer-events-none">
+            <i class="fa-solid fa-shapes" style="font-size: 16rem;"></i>
+        </div>
+        <div class="absolute bottom-0 left-0 -mb-8 -ml-8 text-white opacity-10 pointer-events-none transform rotate-12">
+            <i class="fa-solid fa-compass" style="font-size: 12rem;"></i>
+        </div>
+        
+        <div class="relative z-10">
+            <span class="bg-white text-indigo-700 px-4 py-1.5 rounded-full text-sm font-extrabold tracking-wide mb-5 inline-block shadow-sm">
+                2026학년도 1학기 오프라인 공동교육과정
+            </span>
+            <h1 class="text-3xl md:text-5xl font-extrabold mb-6 tracking-tight break-keep">
+                [기하] 교과 운영 인포그래픽
+            </h1>
+            <div class="flex flex-wrap gap-4 md:gap-8 text-sm md:text-base font-medium opacity-95 bg-indigo-800/30 p-4 rounded-xl backdrop-blur-sm w-fit border border-indigo-400/30">
+                <div class="flex items-center"><i class="fa-solid fa-location-dot mr-2.5 text-indigo-300"></i>안좌고등학교 원격배움터</div>
+                <div class="flex items-center"><i class="fa-solid fa-users mr-2.5 text-indigo-300"></i>안좌고 5명, 지명고 2명 (총 7명)</div>
+                <div class="flex items-center"><i class="fa-solid fa-chalkboard-user mr-2.5 text-indigo-300"></i>교과 지도교사: 정금현</div>
+                <div class="flex items-center"><i class="fa-solid fa-user-tie mr-2.5 text-indigo-300"></i>관리 교사: 김홍주</div>
+                <div class="flex items-center"><i class="fa-regular fa-clock mr-2.5 text-indigo-300"></i>총 34차시 (2단위)</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Announcements & Life Guidance Section -->
+    <section class="bg-white p-6 md:p-8 rounded-3xl shadow-md border border-gray-100 mb-10">
+        <h2 class="text-xl font-bold text-gray-800 mb-5 flex items-center border-b border-gray-200 pb-3">
+            <i class="fa-solid fa-bullhorn text-indigo-500 mr-2.5"></i>
+            공동교육과정 생활 안내 및 유의사항
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div class="flex items-center p-4 bg-gray-50 rounded-xl border border-gray-100 transition hover:bg-gray-100">
+                <div class="bg-blue-100 text-blue-600 w-11 h-11 rounded-xl flex items-center justify-center mr-4 shadow-sm"><i class="fa-solid fa-users text-lg"></i></div>
+                <div><span class="block text-xs text-gray-500 mb-0.5">수강 인원</span><span class="font-bold text-gray-800 text-sm">안좌고 5명, 지명고 2명 (총 7명)</span></div>
+            </div>
+            <div class="flex items-center p-4 bg-gray-50 rounded-xl border border-gray-100 transition hover:bg-gray-100">
+                <div class="bg-indigo-100 text-indigo-600 w-11 h-11 rounded-xl flex items-center justify-center mr-4 shadow-sm"><i class="fa-solid fa-bed text-lg"></i></div>
+                <div><span class="block text-xs text-gray-500 mb-0.5">숙소</span><span class="font-bold text-gray-800 text-sm">안좌고등학교 기숙사</span></div>
+            </div>
+            <div class="flex items-center p-4 bg-gray-50 rounded-xl border border-gray-100 transition hover:bg-gray-100">
+                <div class="bg-orange-100 text-orange-600 w-11 h-11 rounded-xl flex items-center justify-center mr-4 shadow-sm"><i class="fa-regular fa-clock text-lg"></i></div>
+                <div><span class="block text-xs text-gray-500 mb-0.5">일과 시간</span><span class="font-bold text-gray-800 text-sm">기상 07:00 / 취침 23:00</span></div>
+            </div>
+            <div class="flex items-center p-4 bg-gray-50 rounded-xl border border-gray-100 transition hover:bg-gray-100">
+                <div class="bg-green-100 text-green-600 w-11 h-11 rounded-xl flex items-center justify-center mr-4 shadow-sm"><i class="fa-solid fa-phone text-lg"></i></div>
+                <div><span class="block text-xs text-gray-500 mb-0.5">문의 사항</span><span class="font-bold text-gray-800 text-sm">교육과정부장 김홍주 (010-6411-1310)</span></div>
+            </div>
+        </div>
+
+        <div class="bg-rose-50 border-l-4 border-rose-500 p-5 rounded-r-xl">
+            <h3 class="text-rose-800 font-bold text-[15px] mb-2 flex items-center">
+                <i class="fa-solid fa-triangle-exclamation mr-2"></i>기숙사 및 생활 규정 안내
+            </h3>
+            <ul class="list-disc list-outside ml-5 text-rose-700 text-sm space-y-1.5 leading-relaxed marker:text-rose-400">
+                <li>교육과정 운영 기간에 <strong>교과 지도교사 및 관리 교사의 정당한 지시를 거부 및 불응</strong>하는 경우, <strong>교육과정 이수 중단 및 해당 기간 기숙사 퇴소 등</strong>이 될 수 있습니다.</li>
+                <li>기숙사 내의 규정은 기존 <strong>안좌고등학교의 기숙사 내부 규정을 준용</strong>합니다.</li>
+                <li>기타 생활 지도 사항은 <strong>안좌고등학교 학생 생활 규정</strong>에 준하여 적용하되, 지명고등학교와 협의를 통해 결정합니다.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Schedule Container -->
+    <main id="schedule-container" class="relative">
+        <!-- Content will be injected by JavaScript -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center text-gray-400 text-sm py-6 border-t border-gray-200">
+        <p><i class="fa-solid fa-circle-info mr-1"></i> 본 일정은 학교 사정에 따라 일부 변경될 수 있습니다.</p>
+    </footer>
+
+    <!-- Logic to generate the timeline -->
+    <script>
+        // Schedule Data Definition
+        const scheduleData = [
+            {
+                week: "1주차",
+                dates: "7. 3.(금) ~ 7. 4.(토)",
+                days: [
+                    {
+                        name: "7월 3일 (금요일)",
+                        events: [
+                            { time: "17:30 ~ 18:30", type: "meal", title: "저녁 식사" },
+                            { time: "19:00 ~ 19:50", type: "class", title: "1차시", desc: "I. 이차곡선 3. 쌍곡선", tags: ["강의식/모둠협력", "수행평가 1·2 연계"] },
+                            { time: "19:50 ~ 20:00", type: "break", title: "휴식 (10분)" },
+                            { time: "20:00 ~ 20:50", type: "class", title: "2차시", desc: "I. 이차곡선 4. 이차곡선의 접선의 방정식", tags: ["강의식/모둠협력", "수행평가 1·2 연계"] },
+                            { time: "20:50 ~ 21:00", type: "break", title: "휴식 (10분)" },
+                            { time: "21:00 ~ 21:50", type: "class", title: "3차시", desc: "I. 이차곡선 4. 이차곡선의 접선의 방정식", tags: ["강의식/모둠협력", "수행평가 1·2 연계"] }
+                        ]
+                    },
+                    {
+                        name: "7월 4일 (토요일)",
+                        events: [
+                            { time: "08:00 ~ 09:00", type: "meal", title: "아침 식사" },
+                            { time: "09:00 ~ 09:50", type: "class", title: "1차시", desc: "프로젝트 활동", tags: ["프로젝트 수업", "도서 및 주제 탐색", "수행평가 1 연계"] },
+                            { time: "09:50 ~ 10:00", type: "break", title: "휴식 (10분)" },
+                            { time: "10:00 ~ 10:50", type: "class", title: "2차시", desc: "II. 평면벡터 1. 벡터의 뜻과 덧셈, 뺄셈", tags: ["강의식/모둠협력", "수행평가 3 연계"] },
+                            { time: "10:50 ~ 11:00", type: "break", title: "휴식 (10분)" },
+                            { time: "11:00 ~ 11:50", type: "class", title: "3차시", desc: "II. 평면벡터 2. 벡터의 실수배", tags: ["강의식/모둠협력", "수행평가 3 연계"] },
+                            { time: "11:50 ~ 12:00", type: "break", title: "휴식 (10분)" },
+                            { time: "12:00 ~ 12:50", type: "class", title: "4차시", desc: "II. 평면벡터 2. 벡터의 실수배", tags: ["강의식/모둠협력", "수행평가 3 연계"] },
+                            { time: "12:50 ~ 13:30", type: "meal", title: "점심 식사" },
+                            { time: "13:30 ~ 14:20", type: "class", title: "5차시", desc: "II. 평면벡터 3. 위치벡터", tags: ["강의식/모둠협력", "수행평가 3 연계"] },
+                            { time: "14:20 ~ 14:30", type: "break", title: "휴식 (10분)" },
+                            { time: "14:30 ~ 15:20", type: "class", title: "6차시", desc: "II. 평면벡터 3. 위치벡터", tags: ["강의식/모둠협력", "수행평가 3 연계"] },
+                            { time: "15:20 ~ 15:30", type: "break", title: "휴식 (10분)" },
+                            { time: "15:30 ~ 16:20", type: "class", title: "7차시", desc: "II. 평면벡터 4. 평면벡터의 성분", tags: ["강의식/모둠협력", "수행평가 3 연계"] },
+                            { time: "16:20 ~", type: "home", title: "귀가", desc: "수고하셨습니다!" }
+                        ]
+                    }
+                ]
+            },
+            {
+                week: "2주차",
+                dates: "7. 10.(금) ~ 7. 11.(토)",
+                days: [
+                    {
+                        name: "7월 10일 (금요일)",
+                        events: [
+                            { time: "17:30 ~ 18:30", type: "meal", title: "저녁 식사" },
+                            { time: "19:00 ~ 19:50", type: "class", title: "1차시", desc: "II. 평면벡터 4. 평면벡터의 성분", tags: ["강의식/모둠협력", "수행평가 3 연계"] },
+                            { time: "19:50 ~ 20:00", type: "break", title: "휴식 (10분)" },
+                            { time: "20:00 ~ 20:50", type: "class", title: "2차시", desc: "II. 평면벡터 5. 평면벡터의 내적", tags: ["강의식/모둠협력", "수행평가 3 연계"] },
+                            { time: "20:50 ~ 21:00", type: "break", title: "휴식 (10분)" },
+                            { time: "21:00 ~ 21:50", type: "class", title: "3차시", desc: "II. 평면벡터 5. 평면벡터의 내적", tags: ["강의식/모둠협력", "수행평가 3 연계"] }
+                        ]
+                    },
+                    {
+                        name: "7월 11일 (토요일)",
+                        events: [
+                            { time: "08:00 ~ 09:00", type: "meal", title: "아침 식사" },
+                            { time: "09:00 ~ 09:50", type: "class", title: "1차시", desc: "II. 평면벡터 6. 직선과 원의 방정식", tags: ["문답/강의식 수업", "수행평가 3 연계"] },
+                            { time: "09:50 ~ 10:00", type: "break", title: "휴식 (10분)" },
+                            { time: "10:00 ~ 10:50", type: "class", title: "2차시", desc: "II. 평면벡터 6. 직선과 원의 방정식", tags: ["문답/강의식 수업", "수행평가 3 연계"] },
+                            { time: "10:50 ~ 11:00", type: "break", title: "휴식 (10분)" },
+                            { time: "11:00 ~ 11:50", type: "class", title: "3차시", desc: "프로젝트 활동", tags: ["프로젝트 수업", "발표 자료 작성 및 구조화"] },
+                            { time: "11:50 ~ 12:00", type: "break", title: "휴식 (10분)" },
+                            { time: "12:00 ~ 12:50", type: "class", title: "4차시", desc: "III. 공간도형과 공간좌표 1. 직선과 평면의 위치 관계", tags: ["실습 수업(모형 만들기)", "수행평가 3 연계"] },
+                            { time: "12:50 ~ 13:30", type: "meal", title: "점심 식사" },
+                            { time: "13:30 ~ 14:20", type: "class", title: "5차시", desc: "III. 공간도형과 공간좌표 1. 직선과 평면의 위치 관계", tags: ["실습 수업(모형 만들기)", "수행평가 3 연계"] },
+                            { time: "14:20 ~ 14:30", type: "break", title: "휴식 (10분)" },
+                            { time: "14:30 ~ 15:20", type: "class", title: "6차시", desc: "III. 공간도형과 공간좌표 2. 삼수선의 정리", tags: ["강의식/모둠협력", "수행평가 3 연계"] },
+                            { time: "15:20 ~ 15:30", type: "break", title: "휴식 (10분)" },
+                            { time: "15:30 ~ 16:20", type: "class", title: "7차시", desc: "III. 공간도형과 공간좌표 2. 삼수선의 정리", tags: ["강의식/모둠협력", "수행평가 3 연계"] },
+                            { time: "16:20 ~", type: "home", title: "귀가", desc: "수고하셨습니다!" }
+                        ]
+                    }
+                ]
+            },
+            {
+                week: "3주차",
+                dates: "7. 16.(목) ~ 7. 17.(금)",
+                days: [
+                    {
+                        name: "7월 16일 (목요일)",
+                        events: [
+                            { time: "17:30 ~ 18:30", type: "meal", title: "저녁 식사" },
+                            { time: "19:00 ~ 19:50", type: "class", title: "1차시", desc: "III. 공간도형과 공간좌표 3. 정사영", tags: ["강의식/모둠협력", "발표 평가"] },
+                            { time: "19:50 ~ 20:00", type: "break", title: "휴식 (10분)" },
+                            { time: "20:00 ~ 20:50", type: "class", title: "2차시", desc: "III. 공간도형과 공간좌표 3. 정사영", tags: ["강의식/모둠협력", "발표 평가"] },
+                            { time: "20:50 ~ 21:00", type: "break", title: "휴식 (10분)" },
+                            { time: "21:00 ~ 21:50", type: "class", title: "3차시", desc: "III. 공간도형과 공간좌표 4. 공간에서 점의 좌표", tags: ["강의식 수업", "수행평가 1 연계"] }
+                        ]
+                    },
+                    {
+                        name: "7월 17일 (금요일)",
+                        events: [
+                            { time: "08:00 ~ 09:00", type: "meal", title: "아침 식사" },
+                            { time: "09:00 ~ 09:50", type: "class", title: "1차시", desc: "III. 공간도형과 공간좌표 4. 공간에서 점의 좌표", tags: ["강의식 수업", "수행평가 1 연계"] },
+                            { time: "09:50 ~ 10:00", type: "break", title: "휴식 (10분)" },
+                            { time: "10:00 ~ 10:50", type: "class", title: "2차시", desc: "III. 공간도형과 공간좌표 5. 선분의 내분점과 외분점", tags: ["강의식 수업", "수행평가 1 연계"] },
+                            { time: "10:50 ~ 11:00", type: "break", title: "휴식 (10분)" },
+                            { time: "11:00 ~ 11:50", type: "class", title: "3차시", desc: "III. 공간도형과 공간좌표 5. 선분의 내분점과 외분점", tags: ["강의식 수업", "수행평가 1 연계"] },
+                            { time: "11:50 ~ 12:00", type: "break", title: "휴식 (10분)" },
+                            { time: "12:00 ~ 12:50", type: "class", title: "4차시", desc: "III. 공간도형과 공간좌표 6. 구의 방정식", tags: ["강의식 수업", "수행평가 1 연계"] },
+                            { time: "12:50 ~ 13:30", type: "meal", title: "점심 식사" },
+                            { time: "13:30 ~ 14:20", type: "class", title: "5차시", desc: "III. 공간도형과 공간좌표 6. 구의 방정식", tags: ["강의식 수업", "수행평가 1 연계"] },
+                            { time: "14:20 ~ 14:30", type: "break", title: "휴식 (10분)" },
+                            { time: "14:30 ~ 15:20", type: "class", title: "6차시", desc: "프로젝트 활동", tags: ["프로젝트 발표 수업", "탐구 결과물 최종 발표", "수행평가 1 연계"] },
+                            { time: "15:20 ~ 15:30", type: "break", title: "휴식 (10분)" },
+                            { time: "15:30 ~ 16:20", type: "class", title: "7차시", desc: "프로젝트 활동", tags: ["프로젝트 발표 수업", "상호 피드백", "수행평가 1 연계"] },
+                            { time: "16:20 ~", type: "home", title: "귀가", desc: "수고하셨습니다!" }
+                        ]
+                    }
+                ]
+            }
+        ];
+
+        const container = document.getElementById('schedule-container');
+        
+        // 1. Create Tabs Container
+        const tabsContainer = document.createElement('div');
+        tabsContainer.className = 'flex flex-wrap justify-center gap-3 mb-8';
+        container.appendChild(tabsContainer);
+
+        // 2. Create Content Container
+        const contentContainer = document.createElement('div');
+        contentContainer.className = 'relative';
+        container.appendChild(contentContainer);
+
+        // State management
+        let activeTabIndex = 0;
+        const tabButtons = [];
+        const weekSections = [];
+
+        // 3. Render Logic
+        scheduleData.forEach((weekData, weekIndex) => {
+            // Generate Tab Buttons
+            const btn = document.createElement('button');
+            btn.innerHTML = `<i class="fa-solid fa-calendar-week mr-2"></i>${weekData.week}`;
+            btn.onclick = () => switchTab(weekIndex);
+            tabsContainer.appendChild(btn);
+            tabButtons.push(btn);
+
+            // Generate Week Content HTML
+            let htmlContent = `
+            <div id="week-content-${weekIndex}" class="hidden w-full">
+                <div class="bg-white rounded-3xl shadow-md border border-gray-100 overflow-hidden transform transition hover:shadow-lg">
+                    <!-- Week Header -->
+                    <div class="bg-indigo-50 border-b border-indigo-100 px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-2">
+                        <h2 class="text-xl font-bold text-indigo-900 flex items-center">
+                            <span class="bg-indigo-600 text-white w-8 h-8 rounded-lg inline-flex items-center justify-center mr-3 shadow-sm">
+                                <i class="fa-solid fa-calendar-week text-sm"></i>
+                            </span>
+                            ${weekData.week} 운영 계획
+                        </h2>
+                        <span class="bg-white border border-indigo-200 text-indigo-700 px-4 py-1.5 rounded-full text-sm font-bold shadow-sm inline-flex items-center w-fit">
+                            <i class="fa-regular fa-clock mr-2 opacity-70"></i> ${weekData.dates}
+                        </span>
+                    </div>
+                    
+                    <!-- Days Grid -->
+                    <div class="p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            `;
+
+            weekData.days.forEach((day) => {
+                const isChanged = day.name.includes('변경');
+                const titleIconColor = isChanged ? 'text-rose-500' : 'text-indigo-500';
+                const titleIcon = isChanged ? 'fa-triangle-exclamation' : 'fa-calendar-day';
+                const titleBorder = isChanged ? 'border-rose-200' : 'border-gray-200';
+                const titleText = isChanged ? day.name.replace(' - 일정 요일 변경', '<span class="ml-2 text-xs bg-rose-100 text-rose-600 px-2 py-1 rounded font-bold tracking-wide">일정 요일 변경</span>') : day.name;
+
+                htmlContent += `
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-800 mb-6 flex items-center border-b ${titleBorder} pb-3">
+                            <i class="fa-solid ${titleIcon} ${titleIconColor} mr-2.5 text-xl"></i>
+                            ${titleText}
+                        </h3>
+                        <div class="space-y-0 relative">
+                `;
+
+                day.events.forEach((event, index) => {
+                    const isLast = index === day.events.length - 1;
+                    const borderClass = isLast ? "border-transparent" : "border-gray-200";
+
+                    if (event.type === 'break') {
+                        htmlContent += `
+                            <div class="relative pl-7 border-l-2 ${borderClass} pb-4 group">
+                                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-gray-300 border-2 border-white transition-transform duration-300 group-hover:scale-125"></div>
+                                <div class="flex items-center space-x-3 text-sm text-gray-500 pt-0.5">
+                                    <span class="font-medium w-[100px] text-gray-400 tracking-tight">${event.time}</span>
+                                    <span class="text-gray-500 bg-gray-50 px-2.5 py-1 rounded-md text-xs font-medium border border-gray-100 flex items-center">
+                                        <i class="fa-solid fa-mug-hot mr-1.5 text-gray-400"></i>${event.title}
+                                    </span>
+                                </div>
+                            </div>
+                        `;
+                    } 
+                    else {
+                        let config = { dot: '', bg: '', text: '', icon: '' };
+                        if (event.type === 'meal') {
+                            config = { dot: 'bg-orange-400', bg: 'bg-orange-50', text: 'text-orange-600', icon: 'fa-utensils' };
+                        } else if (event.type === 'class') {
+                            config = { dot: 'bg-blue-500', bg: 'bg-blue-50', text: 'text-blue-600', icon: 'fa-book-open' };
+                        } else if (event.type === 'home') {
+                            config = { dot: 'bg-green-500', bg: 'bg-green-50', text: 'text-green-600', icon: 'fa-house-chimney' };
+                        }
+
+                        const descHtml = event.desc ? `<div class="text-gray-500 text-[13px] mt-1 leading-snug bg-gray-50/50 p-2 rounded-md border border-gray-100/50 break-keep">${event.desc}</div>` : '';
+                        
+                        let tagsHtml = '';
+                        if (event.tags && event.tags.length > 0) {
+                            tagsHtml = `<div class="mt-2 flex flex-wrap gap-1.5">` + event.tags.map(tag => {
+                                if(tag.includes('수행평가') || tag.includes('발표 평가')) {
+                                    return `<span class="inline-block bg-blue-50 text-blue-600 text-[11px] font-semibold px-1.5 py-0.5 rounded border border-blue-200">${tag}</span>`;
+                                } else if(tag.includes('수업') || tag.includes('강의') || tag.includes('모둠') || tag.includes('실습')) {
+                                    return `<span class="inline-block bg-emerald-50 text-emerald-600 text-[11px] font-semibold px-1.5 py-0.5 rounded border border-emerald-200">${tag}</span>`;
+                                } else {
+                                    return `<span class="inline-block bg-purple-50 text-purple-600 text-[11px] font-semibold px-1.5 py-0.5 rounded border border-purple-200">${tag}</span>`;
+                                }
+                            }).join('') + `</div>`;
+                        }
+
+                        htmlContent += `
+                            <div class="relative pl-7 border-l-2 ${borderClass} pb-5 group">
+                                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full ${config.dot} border-2 border-white shadow-sm transition-transform duration-300 group-hover:scale-125 group-hover:shadow-md"></div>
+                                <div class="text-sm text-gray-600 mb-2 font-semibold tracking-tight">${event.time}</div>
+                                <div class="bg-white p-3.5 rounded-2xl shadow-sm border border-gray-100 flex items-start space-x-3.5 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
+                                    <div class="${config.bg} ${config.text} p-2 rounded-xl flex-shrink-0 w-11 h-11 flex items-center justify-center shadow-inner">
+                                        <i class="fa-solid ${config.icon} text-lg"></i>
+                                    </div>
+                                    <div class="flex-1 pt-0.5">
+                                        <div class="font-bold text-gray-800 text-sm">
+                                            ${event.title}
+                                        </div>
+                                        ${descHtml}
+                                        ${tagsHtml}
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                });
+
+                htmlContent += `
+                        </div>
+                    </div>
+                `;
+            });
+
+            htmlContent += `
+                    </div>
+                </div>
+            </div>
+            `;
+            
+            // Append generated HTML string as a DOM node
+            const wrapper = document.createElement('div');
+            wrapper.innerHTML = htmlContent.trim();
+            const sectionNode = wrapper.firstChild;
+            contentContainer.appendChild(sectionNode);
+            weekSections.push(sectionNode);
+        });
+
+        // 4. Tab Switching Logic
+        function switchTab(index) {
+            // Update Tab Buttons Styles
+            tabButtons.forEach((btn, i) => {
+                if (i === index) {
+                    btn.className = 'px-6 py-2.5 rounded-full font-bold text-sm transition-all duration-300 bg-indigo-600 text-white shadow-md transform scale-105';
+                } else {
+                    btn.className = 'px-6 py-2.5 rounded-full font-bold text-sm transition-all duration-300 bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 hover:text-indigo-600';
+                }
+            });
+
+            // Update Content Visibility
+            weekSections.forEach((section, i) => {
+                if (i === index) {
+                    section.classList.remove('hidden');
+                    // Retrigger animation
+                    section.classList.remove('animate-fade-in');
+                    void section.offsetWidth; // trigger reflow
+                    section.classList.add('animate-fade-in');
+                } else {
+                    section.classList.add('hidden');
+                }
+            });
+        }
+
+        // Initialize first tab as active
+        switchTab(0);
+
+    </script>
+</body>
+</html>
